@@ -26,24 +26,27 @@ html body{
     text-align: center;
 }
 #header-redes{
-    height: 15%;
-    width: 12%;
-    padding: .2em;
-    text-align: start;
+    width:25%;
+    display: flex;
+    justify-content: center;
+    
+}
+.link-redes{
+   width: 50%;
+   height: 20%;
+   margin-top: 50%;
+    text-align: center;
     border: 2px solid black;
     border-radius: 15%;
     background: rgb(243, 191, 94);
-    font-size: 1.2em;
-    text-align: center;
-    font-family: Acme;
 }
 #header-info{
     color: rgb(230, 230, 230);
     font-family: Acme;
-    margin-top: 2em;
+    
     text-align: start;
-    width: 20%;
-    font-size: 1em;
+    width: 40%;
+    font-size: 7em;
     padding: .2em;
 }
 
@@ -73,12 +76,20 @@ html body{
         width: 90%;
     }
     #header-info{
+        font-size: 3em;
         width: 90%;
     }
      #header-redes{
+         flex-wrap: nowrap;
          text-align: center;
          float: none;
-         width: 70%;
+         width: 100%;
          height: auto;
+     }
+     .link-redes{
+        
+         width: 22%;
+         height: 3em;
+         margin: auto;
      }
 }
