@@ -1,11 +1,20 @@
-html{
+html body{
+    background: rgb(234, 236, 238);
     height: 100%;
     width: 100%;
 }
+
+#encabezado{
+    background-image: url(img/grey-bg.png);
+    background-size: cover;
+    
+}
+
 #header{
+    
     margin:auto;
     width: 100%;
- 
+    
 }
 .header-texto{
     margin-top: 3em;
@@ -16,8 +25,21 @@ html{
     width: 20%;   
     text-align: center;
 }
-
+#header-redes{
+    height: 15%;
+    width: 12%;
+    padding: .2em;
+    text-align: start;
+    border: 2px solid black;
+    border-radius: 15%;
+    background: rgb(243, 191, 94);
+    font-size: 1.2em;
+    text-align: center;
+    font-family: Acme;
+}
 #header-info{
+    color: rgb(230, 230, 230);
+    font-family: Acme;
     margin-top: 2em;
     text-align: start;
     width: 20%;
@@ -28,17 +50,15 @@ html{
 #foto{
     float: left;
     height: auto;
-    
+    border: 3px solid black;
     width: 75%;
     max-width: 13em;
     border-radius: 50%;
     align-self: start;
 }
-
-h2, h3{
-    font-size: 3rem;
-    margin-top: 1em;
-    text-align: center;
+.img-redes{
+    width: 4em;
+    height: auto;
 }
 
 @media screen and (max-width:800px){
@@ -55,5 +75,10 @@ h2, h3{
     #header-info{
         width: 90%;
     }
-     
+     #header-redes{
+         text-align: center;
+         float: none;
+         width: 70%;
+         height: auto;
+     }
 }
