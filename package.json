@@ -1,0 +1,16 @@
+{
+  "name": "julian-lago-webportfolio",
+  "version": "1.0.0",
+  "description": "Portafolio de Julian Lago",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "julian lago",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper": "^1.0.1"
+  }
+}
