@@ -6,6 +6,8 @@ p{
     margin-bottom:.5em;
 }
 #header{
+    display: flex;
+    justify-content: center;
    margin-left: 3em;
 }
 
