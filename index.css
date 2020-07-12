@@ -26,16 +26,17 @@ html body{
     text-align: center;
 }
 #header-redes{
-    width:25%;
+    margin-top: 2em;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    width:25%;
     
 }
 .link-redes{
-   width: 50%;
-   height: 20%;
-   margin-top: 50%;
-    text-align: center;
+    margin-left: 1em;
+    width: 4em;
+    height: 3em;
+
     border: 2px solid black;
     border-radius: 15%;
     background: rgb(243, 191, 94);
@@ -43,10 +44,9 @@ html body{
 #header-info{
     color: rgb(230, 230, 230);
     font-family: Acme;
-    
     text-align: start;
     width: 40%;
-    font-size: 7em;
+    font-size: 6em;
     padding: .2em;
 }
 
@@ -83,12 +83,12 @@ html body{
          flex-wrap: nowrap;
          text-align: center;
          float: none;
-         width: 100%;
+         width: 80%;
          height: auto;
      }
      .link-redes{
         
-         width: 22%;
+         width: 4em;
          height: 3em;
          margin: auto;
      }
