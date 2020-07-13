@@ -11,7 +11,8 @@ html body{
 }
 
 #header{
-    
+    display: flex;
+    flex-direction: row;
     margin:auto;
     width: 100%;
     
@@ -20,10 +21,11 @@ html body{
     margin-top: 3em;
 }
 #header-foto{
-    margin-left: 10em;
+    max-width: 75%;
     font-size: 1.5em;    
-    width: 20%;   
-    text-align: center;
+    width: 25%;   
+    display: flex;
+    justify-content: center;  
 }
 #header-redes{
     margin-top: 2em;
@@ -36,17 +38,17 @@ html body{
     margin-left: 1em;
     width: 4em;
     height: 3em;
-
     border: 2px solid black;
     border-radius: 15%;
     background: rgb(243, 191, 94);
+    text-align: center;
 }
 #header-info{
     color: rgb(230, 230, 230);
     font-family: Acme;
     text-align: start;
-    width: 40%;
-    font-size: 6em;
+    width: 75%;
+    font-size: 5rem;
     padding: .2em;
 }
 
@@ -54,17 +56,23 @@ html body{
     float: left;
     height: auto;
     border: 3px solid black;
-    width: 75%;
-    max-width: 13em;
+    width: 13rem;
     border-radius: 50%;
     align-self: start;
 }
-.img-redes{
-    width: 4em;
-    height: auto;
+#botones-redes{
+
+    width: 25%;
 }
 
-@media screen and (max-width:800px){
+.boton-redes{
+    margin: auto;
+    
+    border:2px solid black;
+    border-radius: 15%;
+    background: orange;
+}
+@media screen and (max-width:600px){
     #header{
         display: flex;
         flex-direction: column;
@@ -74,9 +82,10 @@ html body{
     #header-foto{
         margin-left: 1em;
         width: 90%;
+        justify-content: start;
     }
     #header-info{
-        font-size: 3em;
+       font-size: 3rem;
         width: 90%;
     }
      #header-redes{
@@ -90,6 +99,6 @@ html body{
         
          width: 4em;
          height: 3em;
-         margin: auto;
+        
      }
 }
