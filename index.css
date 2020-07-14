@@ -13,42 +13,40 @@ html body{
 #header{
     display: flex;
     flex-direction: row;
+    
     margin:auto;
     width: 100%;
     
 }
 .header-texto{
-    margin-top: 3em;
+    margin: 2em;
 }
 #header-foto{
-    max-width: 75%;
+    margin: 1em;
     font-size: 1.5em;    
-    width: 25%;   
-    display: flex;
-    justify-content: center;  
-}
-#header-redes{
-    display: flex;
-    justify-content: end;
-    width:100%;
-    
-}
-.link-redes{
-    margin:1em;
-    width: 3.5rem;
-    height: 2.5rem;
-    border-radius: 15%;
-    text-align: center;
+    width: 30%;   
 }
 #header-info{
     color: rgb(230, 230, 230);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: start;
-    width: 75%;
+    width: 33%;
     font-size: 3rem;
     padding: .2em;
 }
-
+#header-redes{
+    margin-left: 50%;
+    width:50%;
+    display: flex;
+    justify-content:center;
+}
+.link-redes{
+        width: 3em;
+        height: 2.5em;
+        margin: 1em;
+    border-radius: 15%;
+   
+}
 #foto{
     float: left;
     height: auto;
