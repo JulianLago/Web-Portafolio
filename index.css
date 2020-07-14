@@ -29,33 +29,32 @@ html body{
 }
 #header-redes{
     margin-top: 2em;
+    margin-left: 5em;
     display: flex;
     flex-direction: row;
     width:25%;
     
 }
 .link-redes{
-    margin-left: 1em;
-    width: 4em;
-    height: 3em;
-    border: 2px solid black;
-    border-radius: 15%;
-    background: rgb(243, 191, 94);
+    margin-left: 2em;
+    width: 3em;
+    height: 2em;
+   
     text-align: center;
 }
 #header-info{
     color: rgb(230, 230, 230);
-    font-family: Bangers;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: start;
     width: 75%;
-    font-size: 5rem;
+    font-size: 3rem;
     padding: .2em;
 }
 
 #foto{
     float: left;
     height: auto;
-    border: 3px solid black;
+    
     width: 13rem;
     border-radius: 50%;
     align-self: start;
@@ -65,13 +64,7 @@ html body{
     width: 25%;
 }
 
-.boton-redes{
-    margin: auto;
-    
-    border:2px solid black;
-    border-radius: 15%;
-    background: orange;
-}
+
 @media screen and (max-width:600px){
     #header{
         display: flex;
