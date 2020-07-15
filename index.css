@@ -54,11 +54,64 @@ html body{
     border-radius: 50%;
     align-self: start;
 }
-#botones-redes{
-
-    width: 25%;
+#contenido{
+    width: 100%;
+    height: auto;
+    text-align: center  ;
+    
 }
-
+.ventana{
+    
+    width: 50%;
+}
+.ventana-barra{
+    background: cadetblue;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.btn-mover{
+    border:2px solid black;
+    float: left;
+}
+.btn-cerrar{
+    background: red;
+}
+.btn-abrir{
+    background: green;
+   
+}
+.ventana-titulo{
+    font-size: 2em;
+    margin: auto;
+    text-align: center;
+}
+.ventana-conten{
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+#skills{
+    margin-top: 2em;
+    height: auto;
+    width:90%;
+    background:white;
+}
+.ventana-contenido{
+    width: 50%;
+    background: cadetblue;
+    border: 2px solid black;
+}
+.cerrar-ventana{
+    width:1em;
+    height: 1em;
+    background: red;
+}
+.abrir-ventana{
+    width: 1em;
+    height: 1em;
+    background: green;
+}
 
 @media screen and (max-width:600px){
     #header{

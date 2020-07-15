@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
     
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
@@ -40,9 +45,72 @@
  
 </div>
 <div id="contenido">
-<div id="proyectos"> Proyectos </div>
-<div id="skills"> Skills </div>
-<div id="estudios">Estudios</div> 
+
+    <div class="ventana"> 
+        <div class="ventana-barra" >
+            
+            <p class="ventana-titulo">Skills</p>
+        </div>
+    
+        <button id="" class="btn-cerrar ventana-btn">\/</button>
+        
+        <div class="ventana-conten">   
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Javascript</p>
+            <p>Java</p>
+            <p>SQL</p>
+        </div> 
+    </div>
+
+    <div class="ventana"> 
+        <div class="ventana-barra" >
+            
+            <p class="ventana-titulo">Proyectos</p>
+        </div>
+    
+        <button class="btn-cerrar ventana-btn">\/</button>
+        
+        <div class="ventana-conten">   
+            <p>Simon</p>
+            <p>Memotest</p>
+            <p>El Gran Lago Web</p>
+        </div> 
+    </div>
+
+<div class="ventana"> 
+    <div class="ventana-barra" >
+        
+        <p class="ventana-titulo">Estudios</p>
+    </div>
+
+    <button class="btn-cerrar ventana-btn">\/</button>
+    
+    <div class="ventana-conten">   
+       -Tecnicatura 
+       -111mil
+       <p>-sdsdsd
+        -sdsdsd-
+        </p>
+        <p>
+        -dsdsdsd
+        </p>
+    </div> 
 </div>
+
+<!---
+<div class="ventana-contenido">
+    <div class="cerrar-ventana" ></div>
+    <button class="abrir-ventana"></button>
+    Estudios
+    <div class="info-ventana"id="skills">-Tecnicatura-111mil</div>
+</div>
+<div class="ventana-contenido">-Skills-<div class="info-ventana" id="skills">-Java-SQL</div></div>
+<div class="ventana-contenido">-Proyectos-<div class="info-ventana" id="skills">-simon-memotest</div></div> 
+</div>
+-->
+
+
+<script src="src/index.js"></script>
 </body>
 </html>
