@@ -12,8 +12,9 @@ $('.ventana').draggable({
         $(this).parents(".ventana").draggable({
             axis:"x",
             containment:"#contenido",
-            cancel:".ventana-conten, .btn-abrir"
+            cancel:".ventana-conten, .btn-abrir"})
     });
+
     $('.ventana-barra').mousedown(function(){
     $(this).parents(".ventana").draggable({
         axis:"x",
@@ -31,7 +32,8 @@ $('.ventana').draggable({
             $(this).toggleClass("btn-cerrar btn-abrir")
         }
     });
-/*
+
+    /*
 $('.btn-cerrar').click(function(){
     $(this).siblings(".ventana-conten").hide("400")
     $(this).removeClass("btn-cerrar"),
@@ -43,17 +45,3 @@ $('.btn-abrir').click(function(){
 
 });
 */
-
-/// cuando clickeas en el obj se posiciona primero 
-$('.ventana-contenido').mousedown(function(){
-    $(this).siblings(".ventana-contenido").css("z-index",1),
-    $(this).css("z-index",2);
-});
-/// boton de cerrar y abrir ventana
-$('.cerrar-ventana').click(function(){
-    $(this).parent().css("opacity","0%"),
-    $(this).css("opacity","100%")
-})
-$('.abrir-ventana').click(function(){
-    $('.info-ventana').css("display","block")
-})
