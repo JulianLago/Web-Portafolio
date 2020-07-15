@@ -8,7 +8,12 @@ $('.ventana').draggable({
     );
 */
 
-    
+    $('.ventana-barra').on('touchstart',function(){
+        $(this).parents(".ventana").draggable({
+            axis:"x",
+            containment:"#contenido",
+            cancel:".ventana-conten, .btn-abrir"
+    });
     $('.ventana-barra').mousedown(function(){
     $(this).parents(".ventana").draggable({
         axis:"x",
