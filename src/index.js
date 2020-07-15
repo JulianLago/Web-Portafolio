@@ -8,7 +8,7 @@ $('.ventana').draggable({
     );
 */
 
-    $('.ventana-barra').on('touchstart',function(){
+    $('.ventana-cel').on('vmousedown',function(){
         $(this).parents(".ventana").draggable({
             axis:"x",
             containment:"#contenido",
