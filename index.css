@@ -7,16 +7,13 @@ html body{
 #encabezado{
     background-image: url(img/grey-bg.png);
     background-size: cover;
-    
 }
 
 #header{
     display: flex;
     flex-direction: row;
-    
     margin:auto;
     width: 100%;
-    
 }
 .header-texto{
     margin: 2em;
@@ -41,11 +38,10 @@ html body{
     justify-content:center;
 }
 .link-redes{
-        width: 3em;
-        height: 2.5em;
-        margin: 1em;
+    width: 3em;
+    height: 2.5em;
+    margin: 1em;
     border-radius: 15%;
-   
 }
 #foto{
     float: left;
@@ -56,13 +52,22 @@ html body{
 }
 #contenido{
     width: 100%;
-    height: auto;
-    text-align: center  ;
-    
+    height: 50em;
+    text-align: center;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    }
+
+
+#bio{
+    width: 30%;
+    text-align: center;
+    float: left;
 }
 .ventana{
-    
-    width: 50%;
+    width: 25%;
+   
 }
 .ventana-barra{
     background: cadetblue;
@@ -70,17 +75,14 @@ html body{
     flex-direction: row;
     width: 100%;
 }
-.btn-mover{
-    border:2px solid black;
-    float: left;
-}
+
 .btn-cerrar{
     background: red;
 }
 .btn-abrir{
-    background: green;
-   
+    background: green; 
 }
+
 .ventana-titulo{
     font-size: 2em;
     margin: auto;
@@ -88,15 +90,11 @@ html body{
 }
 .ventana-conten{
     border:1px solid black;
-    display: flex;
-    flex-direction: column;
+    position:absolute;
+    left:0;
+    width: 75%;
 }
-#skills{
-    margin-top: 2em;
-    height: auto;
-    width:90%;
-    background:white;
-}
+
 .ventana-contenido{
     width: 50%;
     background: cadetblue;
@@ -141,4 +139,13 @@ html body{
         height: 2em;
         margin: 1em;
     }
+ .ventana-titulo{
+     font-size: 1em;
+ }
+#contenido{
+    flex-direction: row;
+}
+.ventana-conten{
+    
+}
 }

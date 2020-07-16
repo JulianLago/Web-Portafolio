@@ -7,20 +7,49 @@ $('.ventana').draggable({
     containment:'parent'}
     );
 */
-
-    $('.ventana-cel').on('vmousedown',function(){
-        $(this).parents(".ventana").draggable({
-            axis:"x",
-            containment:"#contenido",
-            cancel:".ventana-conten, .btn-abrir"})
-    });
+    /*
+    $('.ventana-barra').on('mousedown',function(){
+        $(this).parents(".ventana").sortable()});
 
     $('.ventana-barra').mousedown(function(){
     $(this).parents(".ventana").draggable({
-        axis:"x",
+        
         containment:"#contenido",
         cancel:".ventana-conten, .btn-abrir"
     });
+    });
+*/  
+    $('.ventana-conten').hide();
+  
+    $('.ventana-btn').click(function(){
+        if($(this).hasClass('btn-cerrar')){
+            $('.ventana-conten').hide('400'),
+        $(this).parent().siblings('.ventana-conten').show('400'),
+        $('.ventana-btn').removeClass('btn-abrir'),
+        $('.ventana-btn').addClass('btn-cerrar'),
+        $(this).toggleClass('btn-cerrar btn-abrir')
+        
+    }
+    })
+  
+    /*
+    $('.ventana-btn').click(function(){
+        if($(this).hasClass('btn-abrir')){
+            $('.ventana-conten').hide('400'),
+            $(this).parent().siblings('.ventana-conten').show('400')
+    
+        }else{
+            $(this).parent().siblings('.ventana-conten').hide('400'),
+            $(this).toggleClass("btn-cerrar btn-abrir")
+        }
+    });
+
+
+    $('.ventana-btn').click(function(){
+        let $boton = $(this);
+        $(this).toggleClass('btn-abrir btn-cerrar'),
+        $('.ventana-btn').toggleClass('btn-cerrar btn-abrir')
+
     });
 
     $('.ventana-btn').click(function(){
@@ -32,7 +61,7 @@ $('.ventana').draggable({
             $(this).toggleClass("btn-cerrar btn-abrir")
         }
     });
-
+*/
     /*
 $('.btn-cerrar').click(function(){
     $(this).siblings(".ventana-conten").hide("400")
