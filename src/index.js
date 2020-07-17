@@ -1,36 +1,26 @@
-
-/// hace al objeto drageable
-
-
-/*
-$('.ventana').draggable({
-    containment:'parent'}
-    );
-*/
-    /*
-    $('.ventana-barra').on('mousedown',function(){
-        $(this).parents(".ventana").sortable()});
-
-    $('.ventana-barra').mousedown(function(){
-    $(this).parents(".ventana").draggable({
-        
-        containment:"#contenido",
-        cancel:".ventana-conten, .btn-abrir"
-    });
-    });
-*/  
-    $('.ventana-conten').hide();
-  
+function activaBoton(){
     $('.ventana-btn').click(function(){
         if($(this).hasClass('btn-cerrar')){
-            $('.ventana-conten').hide('400'),
-        $(this).parent().siblings('.ventana-conten').show('400'),
         $('.ventana-btn').removeClass('btn-abrir'),
         $('.ventana-btn').addClass('btn-cerrar'),
         $(this).toggleClass('btn-cerrar btn-abrir')
         
     }
+    })};
+function muestraContenido(){
+    $('.ventana-btn').click(function(){
+        let nombreContenido = $(this).text();
+        $(`#${nombreContenido}`).siblings().hide('400'),
+        $(`#${nombreContenido}`).show('400')
+
     })
+
+  };
+
+
+    $('.ventana-contenido').hide();
+    activaBoton();
+    muestraContenido();
   
     /*
     $('.ventana-btn').click(function(){
