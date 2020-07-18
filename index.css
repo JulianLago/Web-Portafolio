@@ -1,9 +1,7 @@
 html body{
-    background: rgb(234, 236, 238);
-    height: 100%;
-    width: 100%;
+    background: rgb(205, 206, 207);
 }
-
+ /*///////////////////////////////////////////////  HEADER  ///////////////////////////////////////////////////////*/
 #encabezado{
     background-image: url(img/grey-bg.png);
     background-size: cover;
@@ -14,6 +12,7 @@ html body{
     flex-direction: row;
     margin:auto;
     width: 100%;
+    height: 12em;
 }
 .header-texto{
     margin: 2em;
@@ -27,22 +26,25 @@ html body{
     color: rgb(230, 230, 230);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: start;
-    width: 33%;
+    width: 30%;
     font-size: 3rem;
     padding: .2em;
 }
 #header-redes{
-    margin-left: 50%;
-    width:50%;
-    display: flex;
-    justify-content:center;
+    width:30%;
+    text-align: right;
+
 }
 .link-redes{
     width: 3em;
     height: 2.5em;
-    margin: 1em;
+    margin-right: 1em;
     border-radius: 15%;
+  margin-top: 10rem;
 }
+    .link-redes:hover{
+        box-shadow: 2px 2px 5px black;
+    }
 #foto{
     float: left;
     height: auto;
@@ -50,74 +52,102 @@ html body{
     border-radius: 50%;
     align-self: start;
 }
+
+/*  /////////////////////////////////////// CONTENIDO  //////////////////////////////////////////////   */
 #contenido{
     width: 100%;
-    height: 50em;
+    
     text-align: center;
     border: 1px solid black;
     display: flex;
     flex-direction: row;
     }
+.row{
+    width: 100%;
+    margin-top: 2em;
+}
+    #col-botones{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        margin-left: 2rem;
+        text-align: left;
+    }
+        .boton{
+            font-size: 2em;
+            width: 25%;
+            margin-bottom:1em;
+            border:none;
+            background-color: transparent;
+        }
+        .boton:focus{
+            outline: none;
+        }
+        .boton:hover{
+            text-shadow: 0 0 5px rgb(72, 100, 255);
+            transition: text-shadow 0.2s ease-in-out;
 
+        }
+        
+    #col-contenido{
+        width: 55%;
+    }
+    .vl{
+        border: 2px solid rgb(80, 80, 80);
+        border-radius: 15%;
+
+        height: auto;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    #col-bio{
+        width:20%;
+    }
+#Proyectos{
+    height: auto;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+    .ventana-proyecto{
+        width: 40%;
+        margin: 5%;
+    
+        overflow: hidden;
+        border: 2px solid black;
+
+    }
+    .ventana-proyecto img{
+        height: 15em;
+    }
 
 #bio{
-    width: 30%;
-    text-align: center;
-    float: left;
-}
-.ventana{
-    width: 25%;
-   
-}
-.ventana-barra{
-    background: cadetblue;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+    
+    width: 75%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align:center; 
 }
 
-.btn-cerrar{
-    background: red;
-}
-.btn-abrir{
-    background: green; 
-}
+
+
 
 .ventana-titulo{
-    font-size: 2em;
-    margin: auto;
+    font-size: 1.5em;
+    width: 80%;
     text-align: center;
 }
-.ventana-conten{
-    border:1px solid black;
-    position:absolute;
-    left:0;
-    width: 75%;
-}
 
-.ventana-contenido{
-    width: 50%;
-    background: cadetblue;
-    border: 2px solid black;
-}
-.cerrar-ventana{
-    width:1em;
-    height: 1em;
-    background: red;
-}
-.abrir-ventana{
-    width: 1em;
-    height: 1em;
-    background: green;
-}
 
-@media screen and (max-width:600px){
+/*//////////////////////////////RESPONSIVE//////////////////////////////////////////////////*/
+
+@media screen and (max-width:800px){
   
     #header{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-left: 0.5em;
+        height: 100%;
     }
     #header-foto{
         margin-left: 1em;
@@ -131,21 +161,32 @@ html body{
 
      #header-redes{
          width: 100%;
-        margin-left: 0em;     
+       text-align: right;   
        
     }
-    .link-redes{
-        width: 2.5em;
-        height: 2em;
-        margin: 1em;
-    }
- .ventana-titulo{
-     font-size: 1em;
- }
+
+ 
 #contenido{
     flex-direction: row;
 }
-.ventana-conten{
-    
+#col-botones{
+    width:100%;
+    padding: 5px;
+    flex-direction: row;
 }
+    .boton{
+        font-size: 1em;
+    }
+#col-bio{
+    width:100%;
+
+}    
+.vl{
+    display:none;
+}
+#col-contenido{
+    width:100%;
+    flex-direction: row;
+}
+
 }
