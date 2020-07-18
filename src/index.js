@@ -1,14 +1,14 @@
 function activaBoton(){
-    $('.ventana-btn').click(function(){
+    $('.boton').click(function(){
         if($(this).hasClass('btn-cerrar')){
-        $('.ventana-btn').removeClass('btn-abrir'),
-        $('.ventana-btn').addClass('btn-cerrar'),
+        $('.boton').removeClass('btn-abrir'),
+        $('.boton').addClass('btn-cerrar'),
         $(this).toggleClass('btn-cerrar btn-abrir')
         
     }
     })};
 function muestraContenido(){
-    $('.ventana-btn').click(function(){
+    $('.boton').click(function(){
         let nombreContenido = $(this).text();
         $(`#${nombreContenido}`).siblings().hide('400'),
         $(`#${nombreContenido}`).show('400')
