@@ -12,14 +12,14 @@ function muestraContenido(){
         let nombreContenido = $(this).text();
         $(`#${nombreContenido}`).siblings().hide('400'),
         $(`#${nombreContenido}`).show('400')
-
     })
 
   };
 
+        /////////////////////////////////////////////////////////////
 
     $('.ventana-contenido').hide();
-    $('#Proyectos').show();
+    $('#Skills').show();
     
     activaBoton();
     muestraContenido();
