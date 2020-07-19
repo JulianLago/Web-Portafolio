@@ -19,6 +19,8 @@ function muestraContenido(){
 
 
     $('.ventana-contenido').hide();
+    $('#Proyectos').show();
+    
     activaBoton();
     muestraContenido();
   
