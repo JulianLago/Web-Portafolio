@@ -242,7 +242,24 @@ a:hover{
     width:100%;
     flex-direction: row;
 }
+.skill{
+    margin:auto;
+    margin-top: 4em;
+    width: 75%;
+}
+.subskill{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-height: 3em;
+}
 .skill img{
+
     max-width: 20%;
+}
+.subskill img{
+    margin: 0em;
+    max-width: 3em;
+    height: 100%;
 }
 }
