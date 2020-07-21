@@ -6,6 +6,10 @@ html body{
 a:hover{
     text-decoration: none !important;
 }
+hr{
+    border-width: 3px;
+    border-radius: 5%;
+}
  /*///////////////////////////////////////////////  HEADER  ///////////////////////////////////////////////////////*/
 #encabezado{
     background-image: url(img/grey-bg.png);
@@ -44,9 +48,10 @@ a:hover{
     margin-right: 1em;
     border-radius: 15%;
   margin-top: 10rem;
+  box-shadow: 2px 2px black;
 }
     .link-redes:hover{
-        box-shadow: 2px 2px 5px black;
+        box-shadow: 4px 4px 5px black;
     }
 #foto{
     float: left;
@@ -110,32 +115,30 @@ a:hover{
     flex-wrap: wrap;
 }
     .ventana-proyecto{
-        width: 30%;
+        width:40%;
         margin: 1em;
         background: rgb(81, 81, 82);  
-        overflow: hidden;
         border-radius: 5%;
         color: rgb(199, 199, 199);
         box-shadow: 5px 5px 3px black;
-
+        padding: 1em;
     }
+    
     .ventana-proyecto img{
-        border: 3px solid rgb(255, 255, 255);
         border-radius: 15%;
         margin-top: 1em;
         max-width: 10em;
     }
     .ventana-proyecto button{
-        position: relative;
-        bottom:25%;
-        left:20%;
-        border-radius: 15%;
-        background:rgb(255, 190, 69);
-        border:2px solid gray;
-        
+        border-radius: 50%;
+        background:transparent;
+        margin:1em;
+    }
+    .ventana-proyecto img{
+        margin: .2em;
     }
     .ventana-proyecto button:hover{
-        font-style: normal;
+        background: gray;
         box-shadow: 3px 3px 5px black;
     }
 
@@ -180,8 +183,9 @@ a:hover{
     width: 75%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align:center; 
-    }
-
+    text-align: start;
+    margin: 2em;    
+}
 
 
 
@@ -196,6 +200,7 @@ a:hover{
 
 @media screen and (max-width:800px){
   
+    
     #header{
         display: flex;
         flex-direction: column;
