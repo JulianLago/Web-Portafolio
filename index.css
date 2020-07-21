@@ -80,17 +80,16 @@ a:hover{
         .boton{
             font-size: 2em;
             width: 25%;
-            margin-bottom:1em;
             border:none;
             background-color: transparent;
+            transition: font-size .6s;
+           
         }
         .boton:focus{
             outline: none;
         }
         .boton:hover{
-            text-shadow: 0 0 5px rgb(72, 100, 255);
-            transition: text-shadow 0.2s ease-in-out;
-
+            font-size:2.5em;
         }
         
     #col-contenido{
@@ -157,6 +156,9 @@ a:hover{
     }
     .skill h2{
         width: 75%;
+        font-size: 2.5em;
+        text-align: center;
+        color:rgb(236, 236, 236);
     }
 .skill img{
     border-radius: 25%;
