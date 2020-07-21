@@ -29,7 +29,6 @@ a:hover{
 }
 #header-info{
     color: rgb(230, 230, 230);
-    text-align: start;
     width: 30%;
     font-size: 3rem;
     padding: .2em;
@@ -51,10 +50,8 @@ a:hover{
     }
 #foto{
     float: left;
-    height: auto;
-    width: 13rem;
+    max-width: 7em;
     border-radius: 50%;
-    align-self: start;
 }
 
 /*  /////////////////////////////////////// CONTENIDO  //////////////////////////////////////////////   */
@@ -113,19 +110,20 @@ a:hover{
     flex-wrap: wrap;
 }
     .ventana-proyecto{
-        width: 40%;
-        margin: 5%;
-        background: rgba(118, 110, 190, 0.705);
+        width: 30%;
+        margin: 1em;
+        background: rgb(81, 81, 82);  
         overflow: hidden;
-        border: 2px solid black;
-        border-radius: 15%;
+        border-radius: 5%;
+        color: rgb(199, 199, 199);
+        box-shadow: 5px 5px 3px black;
 
     }
     .ventana-proyecto img{
-        border: 3px solid rgb(202, 109, 46);
+        border: 3px solid rgb(255, 255, 255);
         border-radius: 15%;
         margin-top: 1em;
-        height: 15em;
+        max-width: 10em;
     }
     .ventana-proyecto button{
         position: relative;
@@ -203,7 +201,10 @@ a:hover{
         flex-direction: column;
         align-items: center;
         margin-left: 0.5em;
-        height: 100%;
+        height: auto;
+    }
+    #header-img{
+        max-width: 3em;
     }
     #header-foto{
         margin-left: 1em;
@@ -211,14 +212,18 @@ a:hover{
         justify-content: start;
     }
     #header-info{
-       font-size: 3rem;
+       font-size: 2em;
         width: 90%;
     }
 
      #header-redes{
          width: 100%;
-       text-align: right;   
-       
+       text-align: right;
+       height: auto;   
+    }
+    #header-redes img{
+        max-width: 3em;
+        margin: 1em;
     }
 
  
@@ -245,14 +250,15 @@ a:hover{
     flex-direction: row;
 }
 .skill{
+    font-size: .7em;
     margin:auto;
     margin-top: 4em;
-    width: 75%;
+    width: 90%;
 }
 .subskill{
     display: flex;
     flex-direction: row;
-    width: auto;
+    width: auto ;
     max-height: 3em;
 }
 .skill img{
@@ -263,5 +269,20 @@ a:hover{
     margin: 0em;
     max-width: 3em;
     height: 100%;
+}
+#Proyectos{
+    flex-direction: column;
+    
+}
+.ventana-proyecto{
+    width: 75%;
+    margin: 3em;
+}
+.ventana-proyecto img{
+   
+    max-width: 8em;
+}
+#foto{
+    max-width: 5em;
 }
 }

@@ -19,7 +19,7 @@ function muestraContenido(){
         /////////////////////////////////////////////////////////////
 
     $('.ventana-contenido').hide();
-    $('#Skills').show();
+    $('#Proyectos').show();
     
     activaBoton();
     muestraContenido();
