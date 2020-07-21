@@ -237,6 +237,10 @@ a:hover{
 }
     .boton{
         font-size: 1em;
+        margin: auto;
+    }
+    .boton:hover{
+        font-size: 1.5em;
     }
 #col-bio{
     width:100%;
