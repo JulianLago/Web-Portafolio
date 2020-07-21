@@ -1,6 +1,6 @@
 html body{
-    font-weight: bolder;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    font-family: Montserrat;
     background: rgb(205, 206, 207);
 }
 a:hover{
@@ -183,7 +183,6 @@ hr{
     width: 75%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align:center; 
-    text-align: start;
     margin: 2em;    
 }
 
