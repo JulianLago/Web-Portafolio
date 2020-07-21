@@ -64,7 +64,6 @@ hr{
     width: 100%;
     
     text-align: center;
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
     }
@@ -93,7 +92,12 @@ hr{
         .boton:hover{
             font-size:2.5em;
         }
-        
+        .btn-abrir{
+            font-size: 3em;
+        }
+        .btn-cerrar{
+            font-size: 2em;
+        }
     #col-contenido{
         width: 55%;
     }
@@ -185,7 +189,10 @@ hr{
     text-align:center; 
     margin: 2em;    
 }
+#bio h1{
+    text-decoration: underline;
 
+}
 
 
 .ventana-titulo{
@@ -231,9 +238,7 @@ hr{
     }
 
  
-#contenido{
-    flex-direction: row;
-}
+
 #col-botones{
     width:100%;
     padding: 5px;
@@ -242,13 +247,13 @@ hr{
     .boton{
         font-size: 1em;
         margin: auto;
+        text-shadow: 0px 3px 3px gray;
     }
     .boton:hover{
         font-size: 1.5em;
     }
-#col-bio{
-    width:100%;
-
+#bio{
+ border-bottom: 1px solid gray;   
 }    
 .vl{
     display:none;
@@ -258,10 +263,10 @@ hr{
     flex-direction: row;
 }
 .skill{
-    font-size: .7em;
+    font-size: .5em;
     margin:auto;
     margin-top: 4em;
-    width: 90%;
+    width: 75%;
 }
 .subskill{
     display: flex;
@@ -279,12 +284,16 @@ hr{
     height: 100%;
 }
 #Proyectos{
-    flex-direction: column;
+    flex-direction:column;
     
 }
 .ventana-proyecto{
     width: 75%;
     margin: 3em;
+    font-size: .8em;
+}
+.ventana-proyecto h1{
+    font-size: 2em;
 }
 .ventana-proyecto img{
    
