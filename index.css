@@ -308,8 +308,7 @@ hr{
 }
 .ventana-proyecto button{
     position: absolute;
-    margin-top: 38%;
-    margin-left: 10%;
+    margin-top: 35%;
     width: 4.5em;
     height: 4em;
     background: gray;
