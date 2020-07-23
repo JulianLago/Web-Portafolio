@@ -288,16 +288,31 @@ hr{
     
 }
 .ventana-proyecto{
-    width: 75%;
+    width: 90%;
+    height: auto;
     margin: 3em;
     font-size: .8em;
+    display: flex;
 }
 .ventana-proyecto h1{
-    font-size: 2em;
+    font-size: 1.5em;
+}
+#ventana-proyecto-texto{
+    flex-direction: row;
+
 }
 .ventana-proyecto img{
-   
-    max-width: 8em;
+   float: left;
+   width: auto;
+   height: 75%;
+}
+.ventana-proyecto button{
+    position: absolute;
+    margin-top: 38%;
+    margin-left: 10%;
+    width: 4.5em;
+    height: 4em;
+    background: gray;
 }
 #foto{
     max-width: 5em;
